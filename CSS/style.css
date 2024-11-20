@@ -2,23 +2,53 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Manrope:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+/* COMEÇO COMANDOS REPETIDOS */
+.linha1pxHZ{
+  height: 1px;
+  background-color: white;
+}
+/* FIM COMANDOS REPETIDOS */
+
+#projLink2{
+  margin-left: 50%;
+}
+
+.centralizar{
+  display: flex;
+  align-content: center;
+}
+
+#espacamentoNav{
+  height: 12vh;
+}
+
 /* COMEÇO DA NAVBAR */
 #navbar {
   height: 12vh;
-  background-color: #717171;
+  background-color: #212226;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 2s ease;
+  transition: background 2.5s ease;
+  position: fixed;
+  width: 100vw;
 }
 
 #navbar:hover {
-  background-color: #717171d1;
+  background-color: #212226df;
 }
 
 #logoNavbar {
@@ -31,6 +61,7 @@
   margin: 15px;
   font-family: "inter";
   transition: opacity 0.3s ease;
+  font-weight: 300;
 }
 
 #listaNavbar > ul > li > a:hover {
@@ -48,87 +79,174 @@
 
 /* FIM DA NAVBAR */
 
-/* COMEÇO CONTAINER1 */
-#container {
+
+
+
+/* COMEÇO C1 */
+#c1{
+  height: 80vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  box-sizing: content-box;
+}
+
+#leftC1{
+  height: 80vh;
+  width: 70vw;
+  background-image: linear-gradient(#a5a5a5, #E1E1E1, #E1E1E1, #E1E1E1, #E1E1E1);
+  display: flex;
+}
+
+#contLC1{
   height: 70vh;
-  background-color: #717171;
-  display: flex;
-  padding: 40px;
-}
-
-#esquerdoC1 {
-  align-content: center;
-  width: 70%;
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 90% 10%;
-  padding-left: 75px;
-  padding-right: 75px;
-}
-
-#tituloEC1 {
-  align-self: center;
-  font-family: "inter";
-  color: #eeeeee;
-}
-
-#tituloEC1 p {
-  font-size: 5.5em;
-}
-
-#textoEC1 {
-  padding-top: 20px;
-  font-family: "inter";
-  font-size: 2em;
-  color: #eeeeee;
-  grid-column: 1;
-}
-
-#linhaVerC1 {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column: 2;
-  background-color: #eeeeee;
-  width: 2px;
-  justify-self: center;
-  align-self: center;
-  height: 70%;
-}
-
-#direitoC1 {
-  width: 35%;
-  display: flex;
-}
-
-#blocoDireitoC1 {
-  height: 90%;
-  width: 100%;
-  background: #eeeeee;
-  align-self: center;
-  border-radius: 50px;
+  width: 70vw;
   display: grid;
   grid-template-rows: 40% 60%;
-  padding-left: 75px;
+  grid-template-columns: 10% 90%;
 }
 
-#tituloDC1 {
-  text-decoration: underline 2px;
-  font-size: 3em;
-  font-family: "inter";
-  color: #7c7c7c;
+#tituloLC1{
   align-self: center;
+  grid-column: 2;
+  padding-top: 7.5%;
+  padding-bottom: 3%;
 }
 
-#blocoDireitoC1 ul li {
+#tituloLC1 h1{
+  color: #212226;
+  font-size: 5.5em;
+  font-family: 'Raleway';
+  font-weight: 350;
+}
+
+#underline{
+  height: 2px;
+  background-color: #21222657;
+  width: 28em;
+}
+
+#textoLC1{
+  font-family: 'Manrope';
+  grid-column: 2;
+  font-weight: 300;
+  padding-right: 15%;
+}
+
+#textoLC1 p{
+  color:#212226;
+  font-size: 2em;
+}
+
+#rightC1{
+  width: 30%;
+  height: 100%;
+  background-color: #212226;
+  margin-left: 1px;
+}
+
+#contRC1{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+
+#tituloRC1{
+color: #E1E1E1;
+align-self: center;
+padding-left: 15%;
+padding-top: 7.5%;
+}
+
+#tituloRC1 h1{
+  font-size: 4em;
+  font-family: 'Raleway';
+  font-weight: 300;
+}
+
+#underline2{
+  width: 15em;
+  height: 2px;
+  background-color: #E1E1E1;
+}
+
+#listaRC1 ul{
+padding-left: 15%;
+}
+
+#listaRC1 ul li{
   list-style: none;
-  margin: 15px;
-  margin-left: 0;
-  margin-top: 0;
-  font-family: "inter";
+  padding-bottom: 5%;
 }
 
-#blocoDireitoC1 ul li a {
-  color: #7c7c7c;
+#listaRC1 ul li a{
+  color: #E1E1E1;
   text-decoration: none;
   font-size: 2em;
+  font-family: 'Manrope';
+}
+
+
+
+/* From Uiverse.io by reshades */ 
+.button {
+  background-color: #3C3D40;
+  color: #fff;
+  width: 3.5em;
+  height: 3.5em;
+  border: #27282a 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+  margin-left: 5%;
+}
+
+.button:hover {
+  background-color: #E1E1E1;
+  cursor: pointer;
+  color: #212226;
+}
+
+.button svg {
+  width: 1.6em;
+  display: flex;
+  transition: all 0.6s ease;
+  justify-self: center;
+}
+
+.button:hover svg {
+  transform: translateX(3px);
+}
+
+.text {
+  color: transparent;
+}
+/* FIM C1 */
+
+
+
+/* COMEÇO C2 */
+
+#C2{
+  height: 95vh;
+  width: 100vw;
+  background-color: #3C3D40;
+}
+
+.linhaHZGrande{
+  height: 20px;
+}
+
+#C3{
+  height: 80vh;
+}
+
+.linhaHZGrandeCZ{
+  height: 30px;
+  background: #E1E1E1;
+}
+
+#C4{
+  height: 60vh;
 }
