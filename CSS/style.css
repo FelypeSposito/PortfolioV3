@@ -102,7 +102,7 @@ html, body {
   height: 70vh;
   width: 70vw;
   display: grid;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 50% 50%;
   grid-template-columns: 10% 90%;
 }
 
@@ -149,7 +149,7 @@ html, body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 45% 55%;
 }
 
 #tituloRC1{
@@ -229,24 +229,81 @@ padding-left: 15%;
 /* COMEÇO C2 */
 
 #C2{
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
+  display: grid;
+  grid-template-columns: 42.5% 57.5%;
+  grid-template-rows: 80% 20%;
   background-color: #3C3D40;
 }
 
-.linhaHZGrande{
-  height: 20px;
+#LC2{
+  width: 100%;
+  height: 100%;
+  display: grid;
 }
+
+#RC2{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+
+#boxLC2{
+  height: 90%;
+  width: 70%;
+  background-color: #666A73;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50px;
+  margin-top: 5%;
+}
+
+#boxTopRC2{
+  height: 100%;
+  grid-row: 1;
+  align-content: center;
+}
+
+#boxBottomRC2{
+  height: 100%;
+  grid-row: 2;
+  align-content: center;
+}
+
+#contTopRC2{
+  width: 90%;
+  height: 80%;
+  background-color: #666A73;
+  align-self: center;
+  justify-self: center;
+  border-radius: 30px;
+}
+
+#contBottomRC2{
+  width: 90%;
+  height: 80%;
+  background-color: #666A73;
+  align-self: center;
+  justify-self: center;
+  border-radius: 30px;
+}
+
+#menuHorizontal{
+  width: 60%;
+  height: 60%;
+  background-color: #D9D9D9;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-self: center;
+  justify-self: center;
+  border-radius: 75px;
+}
+
 
 #C3{
   height: 80vh;
+  background-color: #666A73;
 }
 
-.linhaHZGrandeCZ{
-  height: 30px;
-  background: #E1E1E1;
-}
-
-#C4{
-  height: 60vh;
-}
