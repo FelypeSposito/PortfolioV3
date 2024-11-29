@@ -150,6 +150,8 @@ html, body {
   height: 100%;
   display: grid;
   grid-template-rows: 45% 55%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 #tituloRC1{
